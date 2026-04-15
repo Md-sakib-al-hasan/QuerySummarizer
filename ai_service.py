@@ -53,7 +53,7 @@ def generate_ai_response (images, difficulty):
 
 
      response = client.models.generate_content(
-        model="gemini-3-flash-preview",
+        model="gemini-2.0-flash",
         contents =contents
     )
      return response.text
