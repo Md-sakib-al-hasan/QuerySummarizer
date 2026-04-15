@@ -127,6 +127,7 @@ if pressed:
 
             #the portion below will be replaced by API Call 
             with st.spinner("Voice  translate"):
+                 
                 audio = audio_transcription(generated_notes)
                 st.audio(audio)
 

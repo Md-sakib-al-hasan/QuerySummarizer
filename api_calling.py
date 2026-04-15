@@ -23,6 +23,7 @@ def note_generator(images):
 
 
 def audio_transcription(text):
+    text = text.replace("#","").replace("*","").replace("-","")
     speech = gTTS(text,lang="bn",slow=False)
     audio_buffer = io.BytesIO()
     speech.write_to_fp(audio_buffer)
